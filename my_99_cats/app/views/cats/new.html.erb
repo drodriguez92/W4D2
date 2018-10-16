@@ -1,0 +1,35 @@
+<!-- <h1>Make a new damn cat!</h1>
+
+<form action="#<%= cats_url %>" method="post">
+  <label for="name">Cat Name: </label>
+    <input id="name" type="text" name="cat[name]" value="#<%= @cat.name %>"> <br>
+    <p>
+    </p>
+    <input type="radio" name="cat[sex]" value="M"> Male
+    <input type="radio" name="cat[sex]" value="F"> Female <br>
+    <p>
+    </p>
+    <legend> Cat Color </legend>
+    <select name="cat[color]">
+      <option>-select a color-</option>
+      #<% @colors.each do |color| %>
+      <option value="#<%=color%>">#<%=color%></option>
+      #<% end %>
+    </select><br>
+    <p>
+    </p>
+  <legend>Your Cat's Birthday</legend>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="cat[birth_date]"
+               value="#<%= @date %>"
+
+               min="1980-01-01" max="#<%= @date %>" /> <br>
+               <p>
+               </p>
+  <legend for="body">Description</legend>
+  <textarea id="body" name="cat[text]" rows="4" cols="40"></textarea><br>
+
+    <input type="submit" name="" value="Create Cat!">
+</form> -->
+
+<%= render "form", edit: false, cat: @cat %>
